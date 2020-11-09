@@ -6,6 +6,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    
+    # This will check for dupes in the constant BRANDS and pass nothing, if condition is false will push new brand into constant BRANDS.
     if BRANDS.include?(brand)
     else
       BRANDS << brand
